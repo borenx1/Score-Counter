@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings">
+
+    <PreferenceCategory
+        android:key="scoreboard_category"
+        android:title="@string/settings_scoreboard">
+
+        <ListPreference
+            android:key="scoreboard_number"
+            android:title="@string/settings_scoreboard_number"
+            android:entries="@array/scoreboard_number"
+            android:entryValues="@array/scoreboard_number"
+            android:defaultValue="2"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            android:key="scoreboard_layout"
+            android:title="@string/settings_scoreboard_layout"
+            android:entries="@array/scoreboard_layout"
+            android:entryValues="@array/scoreboard_layout_values"
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true"/>
+
+        <Preference
+            android:key="scoreboard_reset"
+            android:title="@string/settings_scoreboard_reset"
+            android:summary="@string/settings_scoreboard_reset_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="sound_category"
+        android:title="@string/settings_sound">
+
+        <SwitchPreference
+            android:key="sound_master"
+            android:defaultValue="true"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="vibrate_category"
+        android:title="@string/settings_vibrate">
+
+        <SwitchPreference
+            android:key="vibrate_master"
+            android:defaultValue="false"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="other_category"
+        android:title="@string/settings_other">
+
+        <SwitchPreference
+            android:key="other_keep_screen_on"
+            android:title="@string/settings_other_keep_screen_on"
+            android:defaultValue="false"
+            android:summaryOn="@string/settings_other_keep_screen_on_summary_on"
+            android:summaryOff="@string/settings_other_keep_screen_on_summary_off"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

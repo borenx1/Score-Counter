@@ -1,0 +1,198 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppWidget"/>
+    <style name="AppWidget.TextView"/>
+    <style name="AppTextAppearance" parent="TextAppearance.MaterialComponents.Body1"/>
+    <style name="AppTextAppearance.Item"/>
+
+    <style name="AppWidget.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minWidth">10dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="AppWidget.Button.TransparentButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:minWidth">10dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="AppWidget.Button.Increment">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:text">+</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="AppWidget.Button.Decrement">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:text">−</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="AppWidget.Button.TransparentButton.Increment">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:text">+</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="AppWidget.Button.TransparentButton.Decrement">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:text">−</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="AppWidget.Button.ScoreUnitSettings" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconTint">?colorOnPrimary</item>
+        <item name="icon">@drawable/ic_settings</item>
+    </style>
+
+    <style name="AppWidget.TextView.Score">
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:textAppearance">@style/AppTextAppearance.Score</item>
+    </style>
+
+    <style name="AppTextAppearance.Score">
+
+    </style>
+
+    <style name="AppWidget.TextView.ScoreUnitLabel">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAppearance">@style/AppTextAppearance.ScoreUnitLabel</item>
+    </style>
+
+    <style name="AppTextAppearance.ScoreUnitLabel">
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppWidget.TextView.ScoreUnitStep">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAppearance">@style/AppTextAppearance.ScoreUnitStep</item>
+    </style>
+
+    <style name="AppTextAppearance.ScoreUnitStep">
+
+    </style>
+
+    <style name="AppTextAppearance.Item.DateTime">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTextAppearance.Item.Session">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppWidget.EditText.Dialog.Session" parent="Widget.AppCompat.EditText">
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:hint">@string/edit_text_hint_save_file</item>
+    </style>
+
+    <style name="AppWidget.EditText.AddScore.Increment" parent="Widget.AppCompat.EditText">
+        <item name="android:inputType">numberSigned</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/AppTextAppearance.Score</item>
+        <item name="android:maxLength">9</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textColor">?android:textColor</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:colorBackground">@color/backgroundLight</item>
+        <item name="colorPrimary">@color/buttonLight</item>
+        <item name="colorPrimaryVariant">@color/labelLight</item>
+        <item name="android:textColor">@color/onLabelLight</item>
+        <item name="colorOnPrimary">@color/onLabelLight</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit.Dark">
+        <item name="android:colorBackground">@color/backgroundDark</item>
+        <item name="colorPrimary">@color/buttonDark</item>
+        <item name="colorPrimaryVariant">@color/labelDark</item>
+        <item name="android:textColor">@color/onLabelDark</item>
+        <item name="colorOnPrimary">@color/onLabelDark</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit.Red">
+        <item name="android:colorBackground">@color/backgroundRed</item>
+        <item name="colorPrimary">@color/buttonRed</item>
+        <item name="colorPrimaryVariant">@color/labelRed</item>
+        <item name="android:textColor">@color/onLabelRed</item>
+        <item name="colorOnPrimary">@color/onLabelRed</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit.Green">
+        <item name="android:colorBackground">@color/backgroundGreen</item>
+        <item name="colorPrimary">@color/buttonGreen</item>
+        <item name="colorPrimaryVariant">@color/labelGreen</item>
+        <item name="android:textColor">@color/onLabelGreen</item>
+        <item name="colorOnPrimary">@color/onLabelGreen</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit.Blue">
+        <item name="android:colorBackground">@color/backgroundBlue</item>
+        <item name="colorPrimary">@color/buttonBlue</item>
+        <item name="colorPrimaryVariant">@color/labelBlue</item>
+        <item name="android:textColor">@color/onLabelBlue</item>
+        <item name="colorOnPrimary">@color/onLabelBlue</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit.Yellow">
+        <item name="android:colorBackground">@color/backgroundYellow</item>
+        <item name="colorPrimary">@color/buttonYellow</item>
+        <item name="colorPrimaryVariant">@color/labelYellow</item>
+        <item name="android:textColor">@color/onLabelYellow</item>
+        <item name="colorOnPrimary">@color/onLabelYellow</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit.Purple">
+        <item name="android:colorBackground">@color/backgroundPurple</item>
+        <item name="colorPrimary">@color/buttonPurple</item>
+        <item name="colorPrimaryVariant">@color/labelPurple</item>
+        <item name="android:textColor">@color/onLabelPurple</item>
+        <item name="colorOnPrimary">@color/onLabelPurple</item>
+    </style>
+
+    <style name="AppThemeOverlay.ScoreUnit.Cyan">
+        <item name="android:colorBackground">@color/backgroundCyan</item>
+        <item name="colorPrimary">@color/buttonCyan</item>
+        <item name="colorPrimaryVariant">@color/labelCyan</item>
+        <item name="android:textColor">@color/onLabelCyan</item>
+        <item name="colorOnPrimary">@color/onLabelCyan</item>
+    </style>
+
+</resources>

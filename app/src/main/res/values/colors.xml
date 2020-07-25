@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4081</color>
+    <color name="colorPrimaryDark">#c60055</color>
+    <color name="colorSecondary">#00796b</color>
+    <color name="colorSecondaryDark">#004c40</color>
+    
+    <!-- Scoreboard color setting -->
+    <color name="onLabelLight">#000000</color>
+    <color name="buttonLight">#BBBBBB</color>
+    <color name="labelLight">#DADADA</color>
+    <color name="backgroundLight">#FFFFFF</color>
+
+    <color name="onLabelDark">#FFFFFF</color>
+    <color name="buttonDark">#555555</color>
+    <color name="labelDark">#3F3F3F</color>
+    <color name="backgroundDark">#2A2A2A</color>
+
+    <color name="onLabelRed">#660000</color>
+    <color name="buttonRed">#FA4444</color>
+    <color name="labelRed">#FF8888</color>
+    <color name="backgroundRed">#FFBBBB</color>
+
+    <color name="onLabelGreen">#004400</color>
+    <color name="buttonGreen">#33CC33</color>
+    <color name="labelGreen">#88FF88</color>
+    <color name="backgroundGreen">#BBFFBB</color>
+
+    <color name="onLabelBlue">#000066</color>
+    <color name="buttonBlue">#5555FF</color>
+    <color name="labelBlue">#8888FF</color>
+    <color name="backgroundBlue">#BBBBFF</color>
+
+    <color name="onLabelYellow">#333300</color>
+    <color name="buttonYellow">#CCCC22</color>
+    <color name="labelYellow">#FFFF33</color>
+    <color name="backgroundYellow">#FFFFAA</color>
+
+    <color name="onLabelPurple">#220022</color>
+    <color name="buttonPurple">#DD44DD</color>
+    <color name="labelPurple">#FF66FF</color>
+    <color name="backgroundPurple">#FFAAFF</color>
+
+    <color name="onLabelCyan">#002222</color>
+    <color name="buttonCyan">#00BBBB</color>
+    <color name="labelCyan">#22DDDD</color>
+    <color name="backgroundCyan">#AAFFFF</color>
+</resources>
